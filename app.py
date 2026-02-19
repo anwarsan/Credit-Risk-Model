@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 
 # 1. Load otak model
-model = pickle.load(open('credit_model_risk.pkl', 'rb'))
+model = pickle.load(open('credit_risk_model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 features = pickle.load(open('features.pkl', 'rb'))
 
