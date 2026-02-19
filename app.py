@@ -5,9 +5,9 @@ import pickle
 import numpy as np
 
 # 1. Load otak model
-model = pickle.load(open('credit_risk_model.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
-features = pickle.load(open('features.pkl', 'rb'))
+model = pickle.load(open('data/credit_risk_model.pkl', 'rb'))
+scaler = pickle.load(open('data/scaler.pkl', 'rb'))
+features = pickle.load(open('data/features.pkl', 'rb'))
 
 st.title("🛡️ Sistem Penilaian Risiko Kredit JULO")
 st.markdown("---")
