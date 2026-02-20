@@ -12,11 +12,11 @@ features = pickle.load(open('data/features.pkl', 'rb'))
 st.title("🛡️ Sistem Penilaian Risiko Kredit DigiBank")
 st.markdown("---")
 
-# 2. Input Form (Sesuai temuan penting di Assignment 2 & 5)
-st.sidebar.header("Data Input Pelanggan")
+# 2. Input Form (Sesuai temuan penting di Assignmnt 2 & 5)
+st.sidebar.header("Data Input Customer")
 
 def user_input_features():
-    # Fitur paling berpengaruh menurut analisis Anda [cite: 247, 249]
+    # Fitur paling berpengaruh menurut analisis [cite: 247, 249]
     dpd_p1 = st.sidebar.number_input("Days Past Due (DPD)", 0, 365, 0)
     customer_age = st.sidebar.slider("Usia Pelanggan", 18, 70, 25)
     outstanding_balance = st.sidebar.number_input("Outstanding Balance (Rp)", 0)
@@ -53,4 +53,4 @@ if st.button("Prediksi Status"):
     else: # BAD [cite: 108]
         st.error("❌ RESULT: **BAD CUSTOMER**")
         st.write(f"Probabilitas risiko tinggi: {prediction_proba[0][1]:.2%}")
-        st.warning("⚠️ Pelanggan di bawah 30 tahun dan DPD > 30 memiliki risiko default lebih tinggi.")
+        st.warning("⚠️ Customer di bawah 30 tahun dan DPD > 30 memiliki risiko default lebih tinggi.")
