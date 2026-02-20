@@ -9,7 +9,7 @@ model = pickle.load(open('data/credit_risk_model.pkl', 'rb'))
 scaler = pickle.load(open('data/scaler.pkl', 'rb'))
 features = pickle.load(open('data/features.pkl', 'rb'))
 
-st.title("🛡️ Sistem Penilaian Risiko Kredit JULO")
+st.title("🛡️ Sistem Penilaian Risiko Kredit DigiBank")
 st.markdown("---")
 
 # 2. Input Form (Sesuai temuan penting di Assignment 2 & 5)
@@ -48,9 +48,9 @@ if st.button("Prediksi Status"):
 
     st.markdown("---")
     if prediction[0] == 0: # GOOD [cite: 108]
-        st.success("✅ HASIL: **GOOD CUSTOMER**")
+        st.success("✅ RESULT: **GOOD CUSTOMER**")
         st.write(f"Probabilitas risiko rendah: {prediction_proba[0][0]:.2%}")
     else: # BAD [cite: 108]
-        st.error("⚠️ HASIL: **BAD CUSTOMER**")
+        st.error("❌ RESULT: **BAD CUSTOMER**")
         st.write(f"Probabilitas risiko tinggi: {prediction_proba[0][1]:.2%}")
-        st.warning("Insight: Pelanggan di bawah 30 tahun memiliki risiko default lebih tinggi[cite: 149, 218].")
+        st.warning("⚠️ Pelanggan di bawah 30 tahun dan DPD > 30 memiliki risiko default lebih tinggi.")
