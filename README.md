@@ -31,9 +31,9 @@ Data insights to assess credit risk and predict customer default behavior
 - Responsible handling of sensitive financial data
 - Avoidance of biased assumptions in credit decisions
 - Focus on transparency and fairness
-- Model deployment 👉🏻 https://creditrisk-model.streamlit.app
 
 ## Deliverables
 - Credit risk modeling notebooks
 - Risk driver analysis
 - Business recommendations for lending decisions
+- Model deployment 👉🏻 https://creditrisk-model.streamlit.app
