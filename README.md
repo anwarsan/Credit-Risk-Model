@@ -21,6 +21,7 @@ Data insights to assess credit risk and predict customer default behavior
 - Scikit-learn
 - Matplotlib
 - Seaborn
+- Streamlit
 
 ## Stakeholder-Centric Analysis
 - Supports credit approval and risk management teams
